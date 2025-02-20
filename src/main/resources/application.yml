@@ -1,9 +1,13 @@
 constants:
+  jackson:
+    date-format: yyyy-MM-dd
+    datetime-format: yyyy-MM-dd HH:mm:ss
   swagger:
     info:
       title: SpringJPA
       description: 여러가지 작업들
       version: v0.1
+
 
 spring:
   application:

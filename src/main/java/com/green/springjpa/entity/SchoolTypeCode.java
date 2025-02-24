@@ -2,7 +2,7 @@ package com.green.springjpa.entity;
 
 import com.green.springjpa.config.relationenum.AbstractEnumCodeConverter;
 import com.green.springjpa.config.relationenum.EnumMapperType;
-import jakarta.persistence.AttributeConverter;
+import jakarta.persistence.Converter;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
@@ -18,12 +18,10 @@ public enum SchoolTypeCode implements EnumMapperType {
     private final String code;
     private final String value;
 
+    @Converter(autoApply = true) //@Converter(autoApply = true): SchoolTypeCode Enum을 사용하는 Entity는 자동으로 컨버터가 작동한다.
     public static class CodeConverter extends AbstractEnumCodeConverter<SchoolTypeCode> {
-        private static final String ENUM_NAME = "학교타입";
-
         public CodeConverter() {
-            super(SchoolTypeCode.class, false, ENUM_NAME);
+            super(SchoolTypeCode.class, false);
         }
     }
-
 }

@@ -3,7 +3,6 @@ package com.green.springjpa.config.relationenum;
 import io.micrometer.common.util.StringUtils;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
-
 import java.util.EnumSet;
 
 

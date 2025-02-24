@@ -6,6 +6,8 @@ import jakarta.persistence.Converter;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
+
+// SchoolTypeCode[] schoolTypeCodeArray = [ SchoolTypeCode.ELEMENTARY, SchoolTypeCode.MIDDLE, SchoolTypeCode.HIGH ];
 @Getter
 @RequiredArgsConstructor
 public enum SchoolTypeCode implements EnumMapperType {

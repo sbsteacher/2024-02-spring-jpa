@@ -18,7 +18,7 @@ class StudentTest {
 
     @Test
     @Rollback(false)
-    public void insterStudent() {
+    public void insertStudent() {
         School school = School.builder()
                 .schoolId(681662347081532247L)
                 .build();
